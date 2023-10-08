@@ -11,7 +11,8 @@ $color-orange: #F28B64
     margin: 0 auto
 
 .main-section
-    height: 800px
+    position: relative
+    min-height: 800px
     background: #F0F0F0
     padding-top: 16px
     overflow: hidden
@@ -89,6 +90,7 @@ $color-orange: #F28B64
     position: absolute
     top: 150px
     right: 76px
+    z-index: 9
     &__icons-box
         margin-bottom: 1px
         padding-left: 10px
@@ -164,3 +166,25 @@ $color-orange: #F28B64
         &_big
             width: 188px
             height: 188px
+
+.second-section
+    min-height: 700px
+    &__container
+        position: relative
+        padding-top: 32px
+    &__cards-box
+        display: flex
+        justify-content: space-evenly
+
+.cards-item
+    width: 360px
+    height: 360px
+    border-radius: 10px
+    &:last-child
+        margin: 0
+    &_gray
+        background: #E2E2E2
+    &_orange
+        background: $color-orange
+    &_blue
+        background: $color-blue
