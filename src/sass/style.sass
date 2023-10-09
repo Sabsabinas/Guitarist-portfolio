@@ -233,3 +233,55 @@ $color-orange: #F28B64
         span
             font-size: 48px
             font-weight: bold
+
+.third-section
+    position: relative
+    min-height: 640px
+    background: #F0F0F0
+    overflow: hidden
+    z-index: 0
+    &__container
+        display: flex
+        flex-direction: row
+        align-items: center
+        justify-content: space-between
+        padding-left: 167px
+        padding-top: 46px
+    &__right-wrapper
+        max-width: 480px
+    &__right-title
+        margin-bottom: 20px
+    &__right-text
+        font-size: 18px
+        margin-bottom: 30px
+    &__img
+        position: absolute
+        top: 200px
+        left: 275px
+        z-index: 5
+    &__second-elipse
+        position: absolute
+        top: 105px
+        left: 335px
+        z-index: 0
+    &__third-elipse
+        position: absolute
+        top: -110px
+        right: -150px
+        transform: rotate(-48.201deg)
+
+.title__hr_top
+    bottom: 75px
+
+.footer
+    &__img
+        position: relative
+        left: -250px
+        bottom: 0
+    &__container
+        min-height: 272px
+        display: flex
+        align-items: center
+        justify-content: flex-end
+    &__title
+        margin-bottom: 20px

@@ -634,4 +634,67 @@ table {
 .icons-box__text span {
   font-size: 48px;
   font-weight: bold;
+}
+
+.third-section {
+  position: relative;
+  min-height: 640px;
+  background: #F0F0F0;
+  overflow: hidden;
+  z-index: 0;
+}
+.third-section__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 167px;
+  padding-top: 46px;
+}
+.third-section__right-wrapper {
+  max-width: 480px;
+}
+.third-section__right-title {
+  margin-bottom: 20px;
+}
+.third-section__right-text {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.third-section__img {
+  position: absolute;
+  top: 200px;
+  left: 275px;
+  z-index: 5;
+}
+.third-section__second-elipse {
+  position: absolute;
+  top: 105px;
+  left: 335px;
+  z-index: 0;
+}
+.third-section__third-elipse {
+  position: absolute;
+  top: -110px;
+  right: -150px;
+  transform: rotate(-48.201deg);
+}
+
+.title__hr_top {
+  bottom: 75px;
+}
+
+.footer__img {
+  position: relative;
+  left: -250px;
+  bottom: 0;
+}
+.footer__container {
+  min-height: 272px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.footer__title {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */
