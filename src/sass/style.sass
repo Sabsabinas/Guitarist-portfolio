@@ -158,6 +158,7 @@ $color-orange: #F28B64
     &_big
         width: 282px
         height: 282px
+        transform: rotate(45deg)
     &__subtract
         width: 129.33px
         height: 129.33px
@@ -166,6 +167,8 @@ $color-orange: #F28B64
         &_big
             width: 188px
             height: 188px
+        &_second
+            background: white
 
 .second-section
     min-height: 700px
@@ -175,6 +178,20 @@ $color-orange: #F28B64
     &__cards-box
         display: flex
         justify-content: space-evenly
+        margin-bottom: 34px
+    &__title
+        margin-bottom: 40px
+    &__first-elipse
+        position: absolute
+        right: 210px
+        top: 860px
+        z-index: 0
+    &__second-elipse
+        position: absolute
+        left: 208px
+        top: 1146px
+        transform: rotate(45deg)
+        z-index: 0
 
 .cards-item
     width: 360px
@@ -184,7 +201,39 @@ $color-orange: #F28B64
         margin: 0
     &_gray
         background: #E2E2E2
+        z-index: 5
     &_orange
         background: $color-orange
     &_blue
         background: $color-blue
+        z-index: 5
+    &__img
+        position: relative
+        top: 25px
+        left: 5px
+    &__text
+        color: #000
+        text-align: center
+        font-size: 36px
+        font-weight: 600
+        transform: rotate(90deg)
+        position: relative
+        top: -200px
+        left: 100px
+
+.icons-box
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin-left: 30px
+    &__items
+        display: inline-flex
+    &__text
+        display: flex
+        flex-direction: column
+        margin-right: 30px
+        padding-left: 20px
+    &__number
+        font-size: 48px
+    &__desc
+        font-size: 18px

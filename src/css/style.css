@@ -539,6 +539,7 @@ table {
 .elipse_big {
   width: 282px;
   height: 282px;
+  transform: rotate(45deg);
 }
 .elipse__subtract {
   width: 129.33px;
@@ -549,6 +550,9 @@ table {
 .elipse__subtract_big {
   width: 188px;
   height: 188px;
+}
+.elipse__subtract_second {
+  background: white;
 }
 
 .second-section {
@@ -561,6 +565,23 @@ table {
 .second-section__cards-box {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 34px;
+}
+.second-section__title {
+  margin-bottom: 40px;
+}
+.second-section__first-elipse {
+  position: absolute;
+  right: 210px;
+  top: 860px;
+  z-index: 0;
+}
+.second-section__second-elipse {
+  position: absolute;
+  left: 208px;
+  top: 1146px;
+  transform: rotate(45deg);
+  z-index: 0;
 }
 
 .cards-item {
@@ -573,10 +594,49 @@ table {
 }
 .cards-item_gray {
   background: #E2E2E2;
+  z-index: 5;
 }
 .cards-item_orange {
   background: #F28B64;
 }
 .cards-item_blue {
   background: #5290EA;
+  z-index: 5;
+}
+.cards-item__img {
+  position: relative;
+  top: 25px;
+  left: 5px;
+}
+.cards-item__text {
+  color: #000;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  transform: rotate(90deg);
+  position: relative;
+  top: -200px;
+  left: 100px;
+}
+
+.icons-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+.icons-box__items {
+  display: inline-flex;
+}
+.icons-box__text {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  padding-left: 20px;
+}
+.icons-box__number {
+  font-size: 48px;
+}
+.icons-box__desc {
+  font-size: 18px;
 }/*# sourceMappingURL=style.css.map */
