@@ -404,6 +404,10 @@ table {
 .nav-menu__item:last-child {
   margin-right: 0px;
 }
+.nav-menu__item a {
+  text-decoration: none;
+  color: black;
+}
 
 .left-wrapper {
   position: relative;
